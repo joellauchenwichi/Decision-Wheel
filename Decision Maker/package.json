@@ -1,0 +1,25 @@
+{
+  "name": "uchen",
+  "version": "1.0.0",
+  "description": "storing api",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "is-node-process": "^1.2.0",
+    "json-stringify-safe": "^5.0.1",
+    "outvariant": "^1.4.3",
+    "propagate": "^2.0.1",
+    "strict-event-emitter": "^0.5.1"
+  },
+  "devDependencies": {
+    "nock": "^14.0.15"
+  }
+}

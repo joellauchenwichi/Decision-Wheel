@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Wheel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header class="hero">
+    <h1>Decision Wheel</h1>
+    <p>Stop overthinking. Let probability decide.</p>
+</header>
+
+<main class="app">
+
+    <!-- LEFT -->
+    <section class="panel">
+
+        <div class="inputRow">
+            <input id="Input" placeholder="Add an option..." />
+            <button id="AddOption">Add</button>
+        </div>
+
+        <ul id="optionList"></ul>
+
+    </section>
+
+    <!-- RIGHT -->
+    <section class="wheelPanel">
+
+        <div class="wheelWrap">
+            <div class="pointer"></div>
+            <canvas id="wheelCanvas"></canvas>
+            <div class="centerDot"></div>
+        </div>
+
+        <button id="SpinWheel" class="spinBtn">SPIN</button>
+
+    </section>
+
+</main>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay">
+    <div class="modal">
+        <button id="overlayClose">✕</button>
+        <h2 id="overlayResult"></h2>
+        <p id="overlayMessage">Evaluating...</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
